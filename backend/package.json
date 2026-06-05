@@ -5,14 +5,16 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "tsx src/server.ts"
+    "dev": "npx nodemon --watch src -e ts,tsx,js,json --exec npx tsx src/server.ts",
+    "typeorm": "tsx ./node_modules/typeorm/cli.js"
   },
   "dependencies": {
     "express": "^5.2.1",
+    "nodemon": "^3.1.14",
     "reflect-metadata": "^0.2.2",
-    "sqlite3": "^5.1.7",
+    "sqlite3": "^6.0.1",
     "tsx": "^4.21.0",
-    "typeorm": "^0.3.28",
+    "typeorm": "0.2.24",
     "typescript": "^5.9.3"
   },
   "devDependencies": {
