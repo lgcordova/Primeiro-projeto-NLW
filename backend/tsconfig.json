@@ -40,6 +40,8 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "experimentalDecorators": true, /* enables experimental support for ES7 decoratiors. */ 
+    "emitDecoratorMetadata": true /* enables experimental support for emitting type metadate for decorators */
   }
 }

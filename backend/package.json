@@ -9,13 +9,15 @@
     "typeorm": "tsx ./node_modules/typeorm/cli.js"
   },
   "dependencies": {
+    "@types/uuid": "^11.0.0",
     "express": "^5.2.1",
     "nodemon": "^3.1.14",
     "reflect-metadata": "^0.2.2",
     "sqlite3": "^6.0.1",
     "tsx": "^4.21.0",
     "typeorm": "0.2.24",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "uuid": "^14.0.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
