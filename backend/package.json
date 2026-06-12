@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "npx nodemon --watch src -e ts,tsx,js,json --exec npx tsx src/server.ts",
     "typeorm": "tsx ./node_modules/typeorm/cli.js"
@@ -11,6 +11,7 @@
   "dependencies": {
     "@types/uuid": "^11.0.0",
     "express": "^5.2.1",
+    "express-async-errors": "^3.1.1",
     "nodemon": "^3.1.14",
     "reflect-metadata": "^0.2.2",
     "sqlite3": "^6.0.1",

@@ -1,31 +1,35 @@
 import {Column, CreateDateColumn, Entity, PrimaryColumn} from "typeorm";
 import { v4 as uuid } from "uuid"
-@Entity("users") 
+
+@Entity('users') 
 class User {
 
+
+
+  
   @PrimaryColumn("uuid")
- id: string;
+  id: string;
   
   @Column("varchar")
-  name: string
+  name: string;
 
   @Column("varchar")
-  email: string
+  email: string;
 
 
   @Column("boolean")
-  admin: boolean
+  admin: boolean;
 
   @CreateDateColumn()
-  created_at: Date
+  created_at: Date;
   
   @CreateDateColumn()
-  updated_at: Date 
+  updated_at: Date;
 
-    constructor(){
-      if (!this.id){
-        this.id = uuid();
-      }
+  constructor(){
+    if (!this.id){
+      this.id = uuid();
+    }
   }
 }
 
