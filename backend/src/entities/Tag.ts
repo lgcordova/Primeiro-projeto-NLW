@@ -7,7 +7,7 @@ class Tag {
   @PrimaryColumn("uuid")
   readonly id: string;
 
-  @Column()
+  @Column("text")
   name: string;
 
   @CreateDateColumn()

@@ -4,9 +4,6 @@ import { v4 as uuid } from "uuid"
 @Entity('users') 
 class User {
 
-
-
-  
   @PrimaryColumn("uuid")
   id: string;
   
@@ -16,6 +13,8 @@ class User {
   @Column("varchar")
   email: string;
 
+  @Column("varchar")
+  password: string;
 
   @Column("boolean")
   admin: boolean;

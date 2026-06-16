@@ -14,5 +14,3 @@ router.post("/users", ensureAdmin, createUserController.handle);
 router.post("/tags", createTagController.handle);
 
 export {router};
-
-
