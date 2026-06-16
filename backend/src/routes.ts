@@ -10,7 +10,6 @@ const router = Router();
 const createUserController = new CreateUserController();
 const createTagController = new CreateTagController();
 
-router.use(ensureAdmin)
 router.post("/users", ensureAdmin, createUserController.handle);
 router.post("/tags", createTagController.handle);
 
