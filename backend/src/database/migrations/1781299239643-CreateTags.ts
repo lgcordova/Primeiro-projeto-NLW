@@ -14,23 +14,25 @@ export class CreateTags1781299239643 implements MigrationInterface {
                     },
                     {
                         name: "name",
-                        type: "varchar",
+                        type: "varchar"
                     },
                     {
                         name:"created_at",
                         type:"timestamp",
-                        default: "now()",
+                        default: "now()"
                     },
                     {
                         name: "updated_at",
                         type: "timestamp",
-                        default: "now()",
-        },
-    ],
-   })
-
+                        default: "now()"
+                    }
+                ],
+            })
+        )
+    }
 
     public async down(queryRunner: QueryRunner): Promise<any> {
+        await queryRunner.dropTable("tags")
     }
 
 }
